@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		29FD2D37246315E400F2BAE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FD2D36246315E400F2BAE8 /* Preview Assets.xcassets */; };
 		29FD2D3A246315E400F2BAE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FD2D38246315E400F2BAE8 /* LaunchScreen.storyboard */; };
 		29FD2D45246315E400F2BAE8 /* UnitTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD2D44246315E400F2BAE8 /* UnitTestTests.swift */; };
+		29FD2D512463161300F2BAE8 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 29FD2D502463161300F2BAE8 /* ViewInspector */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29FD2D512463161300F2BAE8 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +143,9 @@
 				29FD2D42246315E400F2BAE8 /* PBXTargetDependency */,
 			);
 			name = UnitTestTests;
+			packageProductDependencies = (
+				29FD2D502463161300F2BAE8 /* ViewInspector */,
+			);
 			productName = UnitTestTests;
 			productReference = 29FD2D40246315E400F2BAE8 /* UnitTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -173,6 +178,9 @@
 				Base,
 			);
 			mainGroup = 29FD2D21246315E200F2BAE8;
+			packageReferences = (
+				29FD2D4F2463161300F2BAE8 /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 29FD2D2B246315E200F2BAE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -473,6 +481,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29FD2D4F2463161300F2BAE8 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29FD2D502463161300F2BAE8 /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29FD2D4F2463161300F2BAE8 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29FD2D22246315E200F2BAE8 /* Project object */;
 }
